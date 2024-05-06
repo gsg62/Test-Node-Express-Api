@@ -1,6 +1,8 @@
 const express = require("express");
+require('dotenv').config();
+
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 3000; // uses 8080 for local dev
 
 app.use(express.json());
 
